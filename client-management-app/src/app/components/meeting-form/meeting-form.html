@@ -1,0 +1,13 @@
+<h2>Create a Meeting Schedule</h2>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label for="topic">Meeting Topic:</label>
+  <input id="topic" type="text" formControlName="topic" placeholder="Enter Meeting Topic" />
+
+  <label for="participants">Number of People:</label>
+  <input id="participants" type="number" formControlName="participants" placeholder="Enter number of people" />
+
+  <label for="startTime">Start Time:</label>
+  <input id="startTime" type="datetime-local" formControlName="startTime" />
+
+  <button type="submit">Create Meeting</button>
+</form>

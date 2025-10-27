@@ -1,0 +1,10 @@
+<div class="card">
+  <h2>Client List</h2>
+  <div *ngIf="clients().length === 0">No clients found.</div>
+  <ul *ngIf="clients().length > 0">
+    <li *ngFor="let c of clients()">
+      <strong>{{ c.name }}</strong> — {{ c.company }} <br>
+      <small>{{ c.email }} | {{ c.phone }}</small>
+    </li>
+  </ul>
+</div>

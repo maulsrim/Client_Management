@@ -1,0 +1,21 @@
+<h2>Create a Client</h2>
+<p>Please fill this form to create a client.</p>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label for="name">Name:</label>
+  <input id="name" type="text" formControlName="name" placeholder="Enter Name" />
+
+  <label for="email">Email:</label>
+  <input id="email" type="email" formControlName="email" placeholder="Enter Email" />
+
+  <label for="address">Address:</label>
+  <input id="address" type="text" formControlName="address" placeholder="Enter Address" />
+
+  <label for="password">Password:</label>
+  <input id="password" type="password" formControlName="password" placeholder="Enter Password" />
+
+  <label for="confirmPassword">Confirm Password:</label>
+  <input id="confirmPassword" type="password" formControlName="confirmPassword" placeholder="Repeat Password" />
+
+  <button type="submit">Register</button>
+</form>
